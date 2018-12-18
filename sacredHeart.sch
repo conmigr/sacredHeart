@@ -3600,15 +3600,15 @@ Example datasheet (CSTCE_VH3L)</description>
 <attribute name="VALUE" x="165.1" y="12.7" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="JP1" gate="G$1" x="215.9" y="-5.08"/>
-<instance part="P+15" gate="VCC" x="190.5" y="5.08" smashed="yes" rot="R90">
-<attribute name="VALUE" x="187.96" y="7.62" size="1.778" layer="96" rot="R270"/>
+<instance part="P+15" gate="VCC" x="190.5" y="-2.54" smashed="yes" rot="R90">
+<attribute name="VALUE" x="187.96" y="0" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="JP2" gate="A" x="246.38" y="-10.16"/>
-<instance part="JP3" gate="A" x="271.78" y="-10.16"/>
-<instance part="P+16" gate="VCC" x="226.06" y="2.54" smashed="yes">
-<attribute name="VALUE" x="228.6" y="5.08" size="1.778" layer="96" rot="R180"/>
+<instance part="JP3" gate="A" x="274.32" y="-10.16"/>
+<instance part="P+16" gate="VCC" x="226.06" y="5.08" smashed="yes">
+<attribute name="VALUE" x="228.6" y="7.62" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND16" gate="1" x="223.52" y="-12.7"/>
+<instance part="GND16" gate="1" x="228.6" y="-22.86"/>
 <instance part="P+17" gate="VCC" x="170.18" y="58.42" smashed="yes">
 <attribute name="VALUE" x="172.72" y="60.96" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -3621,8 +3621,8 @@ Example datasheet (CSTCE_VH3L)</description>
 <instance part="P+18" gate="VCC" x="259.08" y="96.52" smashed="yes">
 <attribute name="VALUE" x="261.62" y="99.06" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+19" gate="VCC" x="195.58" y="10.16" smashed="yes" rot="R90">
-<attribute name="VALUE" x="193.04" y="12.7" size="1.778" layer="96" rot="R270"/>
+<instance part="P+19" gate="VCC" x="195.58" y="2.54" smashed="yes" rot="R90">
+<attribute name="VALUE" x="193.04" y="5.08" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="C5" gate="G$1" x="231.14" y="78.74"/>
 <instance part="P+20" gate="VCC" x="190.5" y="106.68" smashed="yes">
@@ -3714,11 +3714,11 @@ Example datasheet (CSTCE_VH3L)</description>
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="4"/>
-<wire x1="243.84" y1="-7.62" x2="226.06" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="-7.62" x2="223.52" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="-17.78" x2="231.14" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="-17.78" x2="228.6" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="223.52" y1="-7.62" x2="223.52" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="-17.78" x2="228.6" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="8"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="P$2"/>
@@ -3803,9 +3803,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="162.56" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="5"/>
-<wire x1="243.84" y1="-10.16" x2="228.6" y2="-10.16" width="0.1524" layer="91"/>
-<label x="228.6" y="-10.16" size="1.778" layer="95"/>
+<label x="200.66" y="-12.7" size="1.778" layer="95"/>
+<wire x1="213.36" y1="-12.7" x2="200.66" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="10"/>
 </segment>
 </net>
 <net name="SCLK" class="0">
@@ -3815,9 +3815,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="162.56" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="6"/>
-<wire x1="243.84" y1="-12.7" x2="228.6" y2="-12.7" width="0.1524" layer="91"/>
-<label x="228.6" y="-12.7" size="1.778" layer="95"/>
+<label x="200.66" y="-10.16" size="1.778" layer="95"/>
+<wire x1="213.36" y1="-10.16" x2="200.66" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="9"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -3827,10 +3827,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="162.56" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="7"/>
-<wire x1="243.84" y1="-15.24" x2="231.14" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="-15.24" x2="228.6" y2="-15.24" width="0.1524" layer="91"/>
-<label x="228.6" y="-15.24" size="1.778" layer="95"/>
+<wire x1="213.36" y1="-7.62" x2="200.66" y2="-7.62" width="0.1524" layer="91"/>
+<label x="200.66" y="-7.62" size="1.778" layer="95"/>
+<pinref part="JP1" gate="G$1" pin="8"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -3840,9 +3839,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="162.56" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="8"/>
-<wire x1="243.84" y1="-17.78" x2="228.6" y2="-17.78" width="0.1524" layer="91"/>
-<label x="228.6" y="-17.78" size="1.778" layer="95"/>
+<label x="200.66" y="-5.08" size="1.778" layer="95"/>
+<wire x1="213.36" y1="-5.08" x2="200.66" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="7"/>
 </segment>
 </net>
 <net name="INT4" class="0">
@@ -3852,9 +3851,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="162.56" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="10"/>
-<wire x1="213.36" y1="-12.7" x2="200.66" y2="-12.7" width="0.1524" layer="91"/>
-<label x="200.66" y="-12.7" size="1.778" layer="95"/>
+<label x="228.6" y="-2.54" size="1.778" layer="95"/>
+<wire x1="243.84" y1="-2.54" x2="228.6" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="INT5" class="0">
@@ -3864,9 +3863,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="162.56" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="9"/>
-<wire x1="213.36" y1="-10.16" x2="200.66" y2="-10.16" width="0.1524" layer="91"/>
-<label x="200.66" y="-10.16" size="1.778" layer="95"/>
+<label x="200.66" y="-15.24" size="1.778" layer="95"/>
+<wire x1="213.36" y1="-15.24" x2="200.66" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="11"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
@@ -3883,9 +3882,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="162.56" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="8"/>
-<wire x1="213.36" y1="-7.62" x2="200.66" y2="-7.62" width="0.1524" layer="91"/>
-<label x="200.66" y="-7.62" size="1.778" layer="95"/>
+<label x="200.66" y="-17.78" size="1.778" layer="95"/>
+<wire x1="213.36" y1="-17.78" x2="200.66" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="12"/>
 </segment>
 </net>
 <net name="INT7" class="0">
@@ -3895,9 +3894,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="162.56" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="7"/>
-<wire x1="213.36" y1="-5.08" x2="200.66" y2="-5.08" width="0.1524" layer="91"/>
-<label x="200.66" y="-5.08" size="1.778" layer="95"/>
+<label x="228.6" y="-5.08" size="1.778" layer="95"/>
+<wire x1="243.84" y1="-5.08" x2="228.6" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -3907,9 +3906,13 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="106.68" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="8"/>
-<wire x1="269.24" y1="-17.78" x2="254" y2="-17.78" width="0.1524" layer="91"/>
-<label x="254" y="-17.78" size="1.778" layer="95"/>
+<label x="254" y="-12.7" size="1.778" layer="95"/>
+<wire x1="261.62" y1="-27.94" x2="251.46" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="254" y1="-12.7" x2="271.78" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="A" pin="6"/>
+<label x="254" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A1" class="0">
@@ -3919,9 +3922,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="106.68" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="7"/>
-<wire x1="269.24" y1="-15.24" x2="254" y2="-15.24" width="0.1524" layer="91"/>
-<label x="254" y="-15.24" size="1.778" layer="95"/>
+<label x="254" y="-10.16" size="1.778" layer="95"/>
+<wire x1="271.78" y1="-10.16" x2="254" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="A" pin="5"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -3931,9 +3934,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="106.68" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="6"/>
-<wire x1="269.24" y1="-12.7" x2="254" y2="-12.7" width="0.1524" layer="91"/>
-<label x="254" y="-12.7" size="1.778" layer="95"/>
+<label x="254" y="-7.62" size="1.778" layer="95"/>
+<wire x1="271.78" y1="-7.62" x2="254" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="A3" class="0">
@@ -3943,9 +3946,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="106.68" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="5"/>
-<wire x1="269.24" y1="-10.16" x2="254" y2="-10.16" width="0.1524" layer="91"/>
-<label x="254" y="-10.16" size="1.778" layer="95"/>
+<label x="254" y="-5.08" size="1.778" layer="95"/>
+<wire x1="271.78" y1="-5.08" x2="254" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="A4" class="0">
@@ -3955,9 +3958,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="106.68" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="4"/>
-<wire x1="269.24" y1="-7.62" x2="254" y2="-7.62" width="0.1524" layer="91"/>
-<label x="254" y="-7.62" size="1.778" layer="95"/>
+<label x="254" y="-2.54" size="1.778" layer="95"/>
+<wire x1="271.78" y1="-2.54" x2="254" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="A5" class="0">
@@ -3967,9 +3970,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="106.68" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="3"/>
-<wire x1="269.24" y1="-5.08" x2="254" y2="-5.08" width="0.1524" layer="91"/>
-<label x="254" y="-5.08" size="1.778" layer="95"/>
+<label x="254" y="0" size="1.778" layer="95"/>
+<wire x1="271.78" y1="0" x2="254" y2="0" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -3979,9 +3982,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="162.56" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="12"/>
-<wire x1="213.36" y1="-17.78" x2="200.66" y2="-17.78" width="0.1524" layer="91"/>
-<label x="200.66" y="-17.78" size="1.778" layer="95"/>
+<label x="228.6" y="-10.16" size="1.778" layer="95"/>
+<wire x1="243.84" y1="-10.16" x2="228.6" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="5"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -3991,9 +3994,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="162.56" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="11"/>
-<wire x1="213.36" y1="-15.24" x2="200.66" y2="-15.24" width="0.1524" layer="91"/>
-<label x="200.66" y="-15.24" size="1.778" layer="95"/>
+<label x="228.6" y="-12.7" size="1.778" layer="95"/>
+<wire x1="243.84" y1="-12.7" x2="228.6" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="6"/>
 </segment>
 </net>
 <net name="AREF" class="0">
@@ -4003,9 +4006,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="106.68" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="3"/>
-<wire x1="243.84" y1="-5.08" x2="228.6" y2="-5.08" width="0.1524" layer="91"/>
-<label x="228.6" y="-5.08" size="1.778" layer="95"/>
+<label x="254" y="-15.24" size="1.778" layer="95"/>
+<wire x1="271.78" y1="-15.24" x2="254" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="A" pin="7"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="P$1"/>
@@ -4028,9 +4031,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="35.56" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="1"/>
-<wire x1="243.84" y1="0" x2="228.6" y2="0" width="0.1524" layer="91"/>
-<label x="228.6" y="0" size="1.778" layer="95"/>
+<label x="228.6" y="-7.62" size="1.778" layer="95"/>
+<wire x1="243.84" y1="-7.62" x2="228.6" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -4112,10 +4115,10 @@ Example datasheet (CSTCE_VH3L)</description>
 <pinref part="LED5" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="2"/>
-<wire x1="243.84" y1="-2.54" x2="226.06" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="0" x2="226.06" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="0" x2="226.06" y2="0" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="2.54" x2="226.06" y2="0" width="0.1524" layer="91"/>
 <pinref part="P+16" gate="VCC" pin="VCC"/>
+<pinref part="JP2" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -4159,9 +4162,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <junction x="177.8" y="40.64"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="3"/>
-<wire x1="213.36" y1="5.08" x2="193.04" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="P+15" gate="VCC" pin="VCC"/>
+<wire x1="213.36" y1="-2.54" x2="193.04" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -4232,9 +4235,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="162.56" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="6"/>
-<wire x1="213.36" y1="-2.54" x2="200.66" y2="-2.54" width="0.1524" layer="91"/>
-<label x="200.66" y="-2.54" size="1.778" layer="95"/>
+<label x="200.66" y="5.08" size="1.778" layer="95"/>
+<wire x1="213.36" y1="5.08" x2="200.66" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="9" class="0">
@@ -4244,10 +4247,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="162.56" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="5"/>
-<wire x1="213.36" y1="0" x2="203.2" y2="0" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="0" x2="200.66" y2="0" width="0.1524" layer="91"/>
-<label x="200.66" y="0" size="1.778" layer="95"/>
+<wire x1="213.36" y1="7.62" x2="200.66" y2="7.62" width="0.1524" layer="91"/>
+<label x="200.66" y="7.62" size="1.778" layer="95"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="10" class="0">
@@ -4257,9 +4259,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="162.56" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="4"/>
-<wire x1="213.36" y1="2.54" x2="200.66" y2="2.54" width="0.1524" layer="91"/>
-<label x="200.66" y="2.54" size="1.778" layer="95"/>
+<label x="200.66" y="10.16" size="1.778" layer="95"/>
+<wire x1="213.36" y1="10.16" x2="200.66" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="LEDPIX" class="0">
@@ -4281,9 +4283,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="162.56" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="2"/>
-<wire x1="269.24" y1="-2.54" x2="254" y2="-2.54" width="0.1524" layer="91"/>
-<label x="254" y="-2.54" size="1.778" layer="95"/>
+<label x="254" y="-17.78" size="1.778" layer="95"/>
+<wire x1="271.78" y1="-17.78" x2="254" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="A" pin="8"/>
 </segment>
 </net>
 <net name="2" class="0">
@@ -4293,10 +4295,10 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="162.56" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="1"/>
-<wire x1="269.24" y1="0" x2="256.54" y2="0" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="0" x2="254" y2="0" width="0.1524" layer="91"/>
-<label x="254" y="0" size="1.778" layer="95"/>
+<wire x1="243.84" y1="-15.24" x2="231.14" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="-15.24" x2="228.6" y2="-15.24" width="0.1524" layer="91"/>
+<label x="228.6" y="-15.24" size="1.778" layer="95"/>
+<pinref part="JP2" gate="A" pin="7"/>
 </segment>
 </net>
 <net name="EN" class="0">
@@ -4307,10 +4309,10 @@ Example datasheet (CSTCE_VH3L)</description>
 <label x="203.2" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="213.36" y1="7.62" x2="200.66" y2="7.62" width="0.1524" layer="91"/>
 <label x="165.1" y="-10.16" size="1.778" layer="95"/>
-<label x="200.66" y="7.62" size="1.778" layer="95"/>
+<label x="200.66" y="0" size="1.778" layer="95"/>
+<wire x1="213.36" y1="0" x2="200.66" y2="0" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -4391,9 +4393,9 @@ Example datasheet (CSTCE_VH3L)</description>
 <wire x1="190.5" y1="101.6" x2="190.5" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
 <pinref part="P+19" gate="VCC" pin="VCC"/>
-<wire x1="213.36" y1="10.16" x2="198.12" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="2.54" x2="198.12" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="4"/>
 </segment>
 </net>
 </nets>
@@ -4403,7 +4405,7 @@ Example datasheet (CSTCE_VH3L)</description>
 <approved hash="113,1,154.836,29.106,FRAME1,,,,,"/>
 <approved hash="113,1,213.597,-2.31394,JP1,,,,,"/>
 <approved hash="113,1,244.077,-7.39394,JP2,,,,,"/>
-<approved hash="113,1,269.477,-7.39394,JP3,,,,,"/>
+<approved hash="113,1,272.017,-7.39394,JP3,,,,,"/>
 <approved hash="113,1,258.843,83.5939,CN1,,,,,"/>
 </errors>
 </schematic>
