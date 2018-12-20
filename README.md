@@ -1,2 +1,2 @@
 # sacredHeart
-Open Platform Heart 
+Open deveopment platform heart shape PCB
